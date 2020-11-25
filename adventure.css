@@ -1,0 +1,47 @@
+body{
+	text-align: center;
+	background-color: black;
+}
+#body_container{
+	background-image: url(IMG/huis.jpg);
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-top: 100px;
+	height: 550px;
+}
+#Title_Level{
+	font-size: 70px;
+	background-color: gray;
+	border: 3px solid black;
+	margin: auto;
+}
+#Level_Description{
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: white;
+	border: 3px solid black;
+	height: 200px;
+	font-size: 30px;
+}
+#Button_Accept{
+	border: 2px solid white;
+	padding: 10px 25px;
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+}
+#Button_Decline{
+	border: 2px solid white;
+	padding: 10px 25px;
+	background-color: black;
+	color: white;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+}
+#Button_Accept:hover{
+
+}
+#Button_Decline:hover{
+
+}
