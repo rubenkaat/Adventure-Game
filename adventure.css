@@ -4,6 +4,8 @@ body{
 }
 #body_container{
 	background-image: url(IMG/huis.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin-left: 300px;
 	margin-right: 300px;
 	margin-top: 100px;
@@ -40,8 +42,12 @@ body{
 	transition-duration: 0.4s;
 }
 #Button_Accept:hover{
-
+	color: black;
+	background-color: white;
+	border: 2px solid black;
 }
 #Button_Decline:hover{
-
+	color: black;
+	background-color: white;
+	border: 2px solid black;
 }
