@@ -1,4 +1,5 @@
 function gameStart(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/huis.jpg')";
 	document.getElementById("Button_Accept").onclick = function(){level1()};
 	document.getElementById("Button_Accept").innerHTML = "START";
 	document.getElementById("Button_Decline").onclick = function(){gameUitleg()};
@@ -8,13 +9,12 @@ function gameStart(){
 }
 function gameUitleg(){
 	document.getElementById("Title_Level").innerHTML = "Uitleg";
-	document.getElementById("Level_Description").innerHTML = "Bij elk level krijg je een stukje tekst te zien dat uitlegt wat er in het level aan de hand is. Daarna kan je op een van de knoppen drukken om naar het volgende level te gaan. Veel Plezier!"
+	document.getElementById("Level_Description").innerHTML = "Bij elk level krijg je een stukje tekst te zien dat uitlegt wat er in het level aan de hand is. Daarna kan je op een van de knoppen drukken om naar het volgende level te gaan. Veel Plezier!";
 	document.getElementById("Button_Decline").innerHTML = "Menu";
 	document.getElementById("Button_Decline").onclick = function(){gameStart()};
 	document.getElementById("Button_Accept").onclick = function(){level1()};
-
+	document.getElementById("Button_Accept").innerHTML = "Start";
 }
-
 function level1(){
 	document.getElementById("body_container").style.backgroundImage = "url('IMG/forest.jpg')";
 	document.getElementById("Title_Level").innerHTML = "Bij de Auto";
@@ -78,7 +78,7 @@ function level7(){
 	document.getElementById("Button_Decline").onclick = function(){level3()};
 	document.getElementById("Button_Decline").innerHTML = "Stap Terug";
 }
-function level8{
+function level8(){
 	document.getElementById("body_container").style.backgroundImage = "url('IMG/gameover.jpg')";
 	document.getElementById("Title_Level").innerHTML = "Game Over";
 	document.getElementById("Level_Description").innerHTML = "Je besluit het licht niet aan te doen en voorzichtig verder te lopen. Helaas zie je daardoor het grote gat in de grond niet en val je erin.";
@@ -138,7 +138,7 @@ function level14(){
 	document.getElementById("Level_Description").innerHTML = "In het kastje vind je een autosleutel. Je loopt de kamer uit. In de kamer recht tegenover je zie je plotseling een man staan. Wat kies je: Val aan of Ren weg?";
 	document.getElementById("Button_Accept").onclick = function(){level16()};
 	document.getElementById("Button_Accept").innerHTML = "Val Aan";
-	document.getElementById("Button_Decline").onclick = function(){level17()};
+	document.getElementById("Button_Decline").onclick = function(){level17a()};
 	document.getElementById("Button_Decline").innerHTML = "Ren Weg";
 }
 function level15(){
@@ -147,11 +147,80 @@ function level15(){
 	document.getElementById("Level_Description").innerHTML = "Je loopt de kamer uit. In de kamer recht tegenover je zie je plotseling een man staan. Wat kies je: Val aan of Ren weg?";
 	document.getElementById("Button_Accept").onclick = function(){level16()};
 	document.getElementById("Button_Accept").innerHTML = "Val Aan";
-	document.getElementById("Button_Decline").onclick = function(){level17()};
+	document.getElementById("Button_Decline").onclick = function(){level17a()};
 	document.getElementById("Button_Decline").innerHTML = "Ren Weg";
 }
 function level16(){
-	
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/gameover.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Game Over";
+	document.getElementById("Level_Description").innerHTML = "Je valt de man aan maar zonder wapen verlies je het gevecht direct. De man maakt je dood.";
+	document.getElementById("Button_Accept").onclick = function(){level1()};
+	document.getElementById("Button_Accept").innerHTML = "Begin Opnieuw";
+	document.getElementById("Button_Decline").onclick = function(){level14()};
+	document.getElementById("Button_Decline").innerHTML = "Stap Terug";
+}
+function level17a(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/gameover.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Game Over";
+	document.getElementById("Level_Description").innerHTML = "Je rent naar beneden en de man komt achter je aan. Hij krijgt je te pakken als je net de trap af bent. Hij maakt je dood.";
+	document.getElementById("Button_Accept").onclick = function(){level1()};
+	document.getElementById("Button_Accept").innerHTML = "Begin Opnieuw";
+	document.getElementById("Button_Decline").onclick = function(){level14()};
+	document.getElementById("Button_Decline").innerHTML = "Stap Terug";
+}
+function level17b(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/gameover.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Game Over";
+	document.getElementById("Level_Description").innerHTML = "Je rent naar beneden en de man komt achter je aan. Hij krijgt je te pakken als je net de trap af bent. Hij maakt je dood.";
+	document.getElementById("Button_Accept").onclick = function(){level1()};
+	document.getElementById("Button_Accept").innerHTML = "Begin Opnieuw";
+	document.getElementById("Button_Decline").onclick = function(){level20()};
+	document.getElementById("Button_Decline").innerHTML = "Stap Terug";
+}
+function level17c(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/gameover.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Game Over";
+	document.getElementById("Level_Description").innerHTML = "Je rent naar beneden en de man komt achter je aan. Hij krijgt je te pakken als je net de trap af bent. Hij maakt je dood.";
+	document.getElementById("Button_Accept").onclick = function(){level1()};
+	document.getElementById("Button_Accept").innerHTML = "Begin Opnieuw";
+	document.getElementById("Button_Decline").onclick = function(){level18()};
+	document.getElementById("Button_Decline").innerHTML = "Stap Terug";
+}
+function level18(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/slaapkamer.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Slaapkamer";
+	document.getElementById("Level_Description").innerHTML = "Je loopt de kamer uit. In de kamer recht tegenover je zie je plotseling een man staan. Wat kies je: Val aan of Ren weg?";
+	document.getElementById("Button_Accept").onclick = function(){level19()};
+	document.getElementById("Button_Accept").innerHTML = "Val Aan";
+	document.getElementById("Button_Decline").onclick = function(){level17c()};
+	document.getElementById("Button_Decline").innerHTML = "Ren Weg";
+}
+function level19(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/gameover.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Game Over";
+	document.getElementById("Level_Description").innerHTML = "Je richt je wapen op de man en hij duikt uit de weg. Dit geeft je genoeg tijd om weg te rennen. Je rent de trap af en ziet een open deur naar een garage. in de garage staat een auto. Je hebt geen sleutel en voordat je de garage uit kan rennen komt de man binnen. hij maakt je dood";
+	document.getElementById("Button_Accept").onclick = function(){level1()};
+	document.getElementById("Button_Accept").innerHTML = "Begin Opnieuw";
+	document.getElementById("Button_Decline").onclick = function(){level18()};
+	document.getElementById("Button_Decline").innerHTML = "Stap Terug";
+}
+function level20(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/slaapkamer.jpg')";
+	document.getElementById("Title_Level").innerHTML = "Slaapkamer";
+	document.getElementById("Level_Description").innerHTML = "In het kastje vind je een autosleutel. Je loopt de kamer uit. In de kamer recht tegenover je zie je plotseling een man staan. Wat kies je: Val aan of Ren weg?";
+	document.getElementById("Button_Accept").onclick = function(){level21()};
+	document.getElementById("Button_Accept").innerHTML = "Val Aan";
+	document.getElementById("Button_Decline").onclick = function(){level17b()};
+	document.getElementById("Button_Decline").innerHTML = "Ren Weg";
+}
+function level21(){
+	document.getElementById("body_container").style.backgroundImage = "url('IMG/garage.jpg')";
+	document.getElementById("Title_Level").innerHTML = "The End";
+	document.getElementById("Level_Description").innerHTML = "Je richt je wapen op de man en hij duikt uit de weg. Dit geeft je genoeg tijd om weg te rennen. Je rent de trap af en ziet een open deur naar een garage. in de garage staat een auto. Je gebruikt de sleutel die je hebt gevonden en de auto start. Je rijd de garage uit en je bent ontsnapt.";
+	document.getElementById("Button_Accept").onclick = function(){level1()};
+	document.getElementById("Button_Accept").innerHTML = "Begin Opnieuw";
+	document.getElementById("Button_Decline").onclick = function(){gameStart()};
+	document.getElementById("Button_Decline").innerHTML = "Terug naar Menu";
 }
 
 gameStart()
